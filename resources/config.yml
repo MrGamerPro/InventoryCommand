@@ -1,33 +1,38 @@
----
-#write here the world name where you want InventoryCommand works!
-#set this field empty if you want that works on all worlds in the server
-#if you want to apply only on two or more worlds, enter the names of the worlds separated by a comma
-#example world, hungergames, lobby
+--
+# English rewrite by: MrGamerPro50.
+# Write the world name here if you want InventoryCommand to work.
+# Leave this field empty if you want InventoryCommand to work on all your worlds
+# If you want to apply to only 2 or more worlds separate them with a coma.
+# Once you edited the config save it and close it then do /reload on your server. You
+# example level: world, hungergames, lobby
 level: world
 
 
 data:
-  #write here slot + slot number (max of slots allowed 35)
-  slot1:
-    #write here item ID
-    id: 276
-    #write here item damage
-    damage: 0
-    #write here item amount
-    amount: 1
-    popup:
-    command:
-      - say fycarman is awesome!
-      -
-      -
-  slot2:
-    id: 277
-    damage: 0
-    amount: 1
-    popup:
-    command:
-      - tell {player} made by fycarman!
-      -
-      -
-#you can add more item (slot),max is 35. Also you can add infinite commands!
+# Write the word slot then put the slot number (Max slots allowed 35)
+slot1:
+# write item ID here.
+id: 276
+# write item damage here.
+damage: 0
+# Write the amount here.
+amount: 1
+# Write the custom item name , this will replace the item's normal name with the popup , Popups also support color codes §.
+popup: §e§lTest §bPopup
+# Write the commands you want that item to run. Use {player} to run the command as the player.
+# If your only going to use 1 command for this item remove the other command fields.
+command:
+- say Fycarman is awesome!
+-
+-
+slot2:
+id: 277
+damage: 0
+amount: 1
+command:
+popup:
+- tell {player} Made by Fycarman!
+-
+-
+#You can add more items/slots (Max slots allowed 35) , And you can add infinite commands!
 ...
